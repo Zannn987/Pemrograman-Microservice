@@ -17,15 +17,18 @@ public class Produk {
     private String nama;
     private Double harga;
     private String deskripsi;
+    private int stok;
 
     // Constructor tanpa parameter
-    public Produk() {}
+    public Produk() {
+    }
 
     // Constructor dengan parameter
-    public Produk(String nama, Double harga, String deskripsi) {
+    public Produk(String nama, Double harga, String deskripsi, int stok) {
         this.nama = nama;
         this.harga = harga;
         this.deskripsi = deskripsi;
+        this.stok = stok;
     }
 
     // Getters dan Setters
@@ -59,5 +62,13 @@ public class Produk {
 
     public void setDeskripsi(String deskripsi) {
         this.deskripsi = deskripsi;
+    }
+
+    public int getStok() {
+        return stok;
+    }
+
+    public void setStok(int stok) {
+        this.stok = stok;
     }
 }
